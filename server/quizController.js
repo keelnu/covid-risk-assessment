@@ -1,6 +1,6 @@
 const path = require('path');
 const quizController = {};
-const pool = require("./userModel");
+const pool = require("./models/userModel");
 
 const riskFactor = {
   mail: 1,

@@ -29,14 +29,14 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// set up routes associated with authentication
-app.use('/auth', authRoutes);
-app.use('/profile', profileRoutes);
+// // set up routes associated with authentication
+// app.use('/auth', authRoutes);
+// app.use('/profile', profileRoutes);
 
-// create home route to view engine in backend
-app.get('/', (req, res) => {
-  res.render('home', { user: req.user });
-});
+// // create home route to view engine in backend
+// app.get('/', (req, res) => {
+//   res.render('home', { user: req.user });
+// });
 
 // statically serve everything in the build folder on the route '/build'
 app.use('/build', express.static(path.join(__dirname, '../build')));
